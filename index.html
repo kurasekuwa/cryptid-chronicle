@@ -4,45 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cryptid Chronicle</title>
-    <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Cryptid Chronicle</h1>
-    <p>Daily Reports on the Creatures Lurking Just Out of Sight</p>
+    <div class="top-bar">BREAKING: Multiple Unconfirmed Sightings Reported Overnight</div>
+    <div class="site-header">
+      <h1>Cryptid Chronicle</h1>
+      <p>Daily Reports on the Creatures Lurking Just Out of Sight</p>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Sightings</a>
+      <a href="#">Evidence</a>
+      <a href="#report">Report a Monster</a>
+    </nav>
   </header>
 
-  <main>
-    <article>
-      <!-- ARTICLE TITLE -->
-      <h2>Your Monster Sighting Title Goes Here</h2>
-      <div class="byline">Reported by Staff Writer | February 1, 2026</div>
+  <div class="layout">
+    <main>
+      <!-- MAIN FEATURE ARTICLE -->
+      <article>
+        <h2>Mysterious Lake Creature Spotted at 2:13 AM</h2>
+        <div class="byline">Reported by Field Correspondent | February 1, 2026</div>
 
-      <!-- FIRST IMAGE -->
-      <img src="https://via.placeholder.com/800x400" alt="Monster sighting image">
+        <img src="https://via.placeholder.com/800x400" alt="Lake monster image">
 
-      <!-- FIRST TEXT SECTION -->
-      <p>
-        This is where the first part of your monster report goes. Describe the sighting, location, and the strange details witnesses noticed. Was there a strange sound? Glowing eyes? Footprints that vanished mid‑trail?
-      </p>
+        <p>
+          Campers at Blackridge Lake reported a massive shape moving beneath the surface just after 2 AM. Witnesses described glowing ripples and a low, echoing sound that "didn't come from any animal they'd ever heard before."
+        </p>
 
-      <p>
-        Add more detail here. News-style writing works best: who saw it, when it happened, and why people think this creature might be something not of this world.
-      </p>
+        <p>
+          One camper claims the water "rose up like something enormous turned over beneath it." No official explanation has been provided.
+        </p>
 
-      <!-- SECOND IMAGE -->
-      <img src="https://via.placeholder.com/800x400" alt="Additional evidence image">
+        <img src="https://via.placeholder.com/800x400" alt="Strange water disturbance">
 
-      <!-- SECOND TEXT SECTION -->
-      <p>
-        Use this section for follow-up information. Maybe an expert weighed in, or locals shared older legends that match the description. You can also include "official" denials for dramatic effect.
-      </p>
+        <p>
+          Local historians point out that similar stories date back over 80 years, describing a "deep-water watcher" said to surface only on the coldest nights.
+        </p>
 
-      <p>
-        Finish with an open-ended mystery to keep readers hooked for the next report from the Cryptid Chronicle.
-      </p>
-    </article>
-  </main>
+        <p>
+          Authorities have closed the lake after dark, though they insist this is "purely precautionary."
+        </p>
+      </article>
+
+      <!-- SECOND ARTICLE -->
+      <article>
+        <h2>Shadow Figure Caught on Downtown Security Camera</h2>
+        <div class="byline">Staff Writer | January 31, 2026</div>
+
+        <img src="https://via.placeholder.com/800x400" alt="Security camera still">
+
+        <p>
+          A late-night security recording appears to show a tall, distorted figure moving between buildings without casting a shadow of its own.
+        </p>
+
+        <p>
+          Video analysts are divided, with some calling it a glitch and others saying the movement "does not match human motion patterns."
+        </p>
+      </article>
+
+      <!-- REPORT FORM -->
+      <div id="report" class="report-box">
+        <h3>Report a Monster Sighting</h3>
+        <p>Seen something strange? Send us your report.</p>
+        <form>
+          <label>Your Name</label>
+          <input type="text" placeholder="Anonymous is fine...">
+
+          <label>Location of Sighting</label>
+          <input type="text" placeholder="City, forest, basement...">
+
+          <label>Description</label>
+          <textarea rows="5" placeholder="What did you see?"></textarea>
+
+          <button type="submit">Submit Report</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- SIDEBAR WITH FAKE ADS -->
+    <aside>
+      <div class="ad">
+        <strong>Ad:</strong> Monster Repellent Spray™<br>
+        "Works on 3 out of 5 unknown entities!"
+        <img src="https://via.placeholder.com/300x250" alt="Ad image">
+      </div>
+
+      <div class="ad">
+        <strong>Ad:</strong> Night Vision Goggles<br>
+        See what sees YOU.
+        <img src="https://via.placeholder.com/300x250" alt="Ad image">
+      </div>
+
+      <div class="ad">
+        <strong>Sponsored:</strong> Bigfoot Tracking Online Course
+        <img src="https://via.placeholder.com/300x250" alt="Ad image">
+      </div>
+    </aside>
+  </div>
 
   <footer>
     &copy; 2026 Cryptid Chronicle | This is a fictional news site for creative projects
